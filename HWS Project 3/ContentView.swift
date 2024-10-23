@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Button("Hello, world!") {
-                // do nothing
+                print(type(of: self.body))
             }
             .background(.red)
             .frame(width: 200, height: 200)
