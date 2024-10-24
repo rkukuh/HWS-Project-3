@@ -9,11 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var hero: some View {
-        Group {
-            Text("Atlas")
-            Text("Hanzo")
-        }
+    @ViewBuilder var hero: some View {
+        Text("Atlas")
+        Text("Hanzo")
     }
     
     var body: some View {
