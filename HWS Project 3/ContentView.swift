@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @ViewBuilder var hero: some View {
-        Text("Atlas")
-        Text("Hanzo")
-    }
-    
     var body: some View {
-        VStack {
-            hero
-                .font(.largeTitle)
-                .foregroundColor(.red)
+        VStack(spacing: 10) {
+            Text("Hello")
+                .font(.title)
+                .padding()
+                .foregroundStyle(.white)
+                .background(.green)
+                .clipShape(.capsule)
+            
+            Text("SwiftUI")
+                .font(.title)
+                .padding()
+                .foregroundStyle(.white)
+                .background(.green)
+                .clipShape(.capsule)
         }
     }
 }
