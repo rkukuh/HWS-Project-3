@@ -12,13 +12,13 @@ struct ContentView: View {
         
         VStack {
             Text("ISB")
-                .font(.largeTitle)
+                .blur(radius: 0)
             
             Text("IMT")
             Text("HTB")
             Text("VCD")
         }
-        .font(.title)
+        .blur(radius: 5)
         
     }
 }
