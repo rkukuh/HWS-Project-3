@@ -12,17 +12,10 @@ struct ContentView: View {
     
     var body: some View {
         
-        if isRedText {
-            Button("Click Me") {
-                isRedText.toggle()
-            }
-            .foregroundStyle(.red)
-        } else {
-            Button("Click Me") {
-                isRedText.toggle()
-            }
-            .foregroundStyle(.blue)
+        Button("Click Me") {
+            isRedText.toggle()
         }
+        .foregroundStyle(isRedText ? .red : .blue)
         
     }
 }
