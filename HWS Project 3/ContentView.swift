@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: Text {
+    @State private var isRedText = false
+    
+    var body: some View {
         
-        Text("Hello, SwiftUI")
-        
-        /*Button("Click me") {
-            print("Hello, World!")
-        }*/
+        if isRedText {
+            Button("Click Me") {
+                isRedText.toggle()
+            }
+            .foregroundStyle(.red)
+        } else {
+            Button("Click Me") {
+                isRedText.toggle()
+            }
+            .foregroundStyle(.blue)
+        }
         
     }
 }
