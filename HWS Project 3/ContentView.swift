@@ -8,17 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @ViewBuilder var hero: some View {
-        Text("Atlas")
-        Text("Hanzo")
-    }
-    
     var body: some View {
         VStack {
-            hero
-                .font(.largeTitle)
-                .foregroundColor(.red)
+            Text("Hello SwiftUI")
+                .modifier(CustomTitle())
         }
     }
 }
