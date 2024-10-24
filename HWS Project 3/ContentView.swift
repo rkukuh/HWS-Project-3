@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @ViewBuilder var hero: some View {
-        Text("Atlas")
-        Text("Hanzo")
-    }
-    
     var body: some View {
         VStack {
-            hero
-                .font(.largeTitle)
-                .foregroundColor(.red)
+            MyStackLayout(rows: 4, columns: 4) { row, col in
+                Text("R\(row) C\(col)")
+                    .padding()
+                    .background(.cyan)
+            }
         }
     }
 }
