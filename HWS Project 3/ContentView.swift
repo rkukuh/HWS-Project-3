@@ -12,6 +12,8 @@ struct ContentView: View {
         
         VStack {
             Text("ISB")
+                .font(.largeTitle)
+            
             Text("IMT")
             Text("HTB")
             Text("VCD")
