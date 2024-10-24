@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 10) {
-            CapsuleText(text: "Hello")
-            CapsuleText(text: "SwiftUI")
+            CapsuleText(text: "Hello", color: .cyan)
+            CapsuleText(text: "SwiftUI", color: .orange)
         }
     }
 }
