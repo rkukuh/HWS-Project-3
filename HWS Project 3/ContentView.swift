@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    let hero1 = Text("Atlas")
-    let hero2 = Text("Hanzo")
+    
+    var hero: some View {
+        Group {
+            Text("Atlas")
+            Text("Hanzo")
+        }
+    }
     
     var body: some View {
         VStack {
-            hero1
+            hero
                 .font(.largeTitle)
                 .foregroundColor(.red)
-            
-            hero2
-                .fontWeight(.heavy)
-                .italic()
         }
     }
 }
