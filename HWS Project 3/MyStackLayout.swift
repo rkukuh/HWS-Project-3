@@ -10,7 +10,7 @@ import SwiftUI
 struct MyStackLayout<Content: View>: View {
     let rows: Int
     let columns: Int
-    let content: (Int, Int) -> Content
+    @ViewBuilder let content: (Int, Int) -> Content
     
     var body: some View {
         VStack {
